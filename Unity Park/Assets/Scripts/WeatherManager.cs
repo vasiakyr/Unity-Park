@@ -1,37 +1,54 @@
+using System.Collections;
 using UnityEngine;
 
 public class WeatherManager : MonoBehaviour
 {
-    public bool isRaining;
-    public bool isSlippery; // μπορεί να σημαίνει “πάγος/βροχή/υγρασία”
+    [Header("Rain Settings")]
+    public float rainDuration = 10f;      // πόσο κρατάει η βροχή
+    public float clearDuration = 10f;     // πόσο κρατάει ο ήλιος
 
-    [Header("References")]
+    public ParticleSystem rainVFX;
     public LEDStripController[] ledStrips;
 
-    // quick test με πλήκτρα
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            isRaining = !isRaining;
-            // αν βρέχει, το κάνουμε “ολισθηρό”
-            isSlippery = isRaining;
-            Apply();
-        }
-    }
-
-    public void Apply()
-    {
-        bool danger = isSlippery;
-
-        foreach (var s in ledStrips)
-            if (s != null) s.SetDanger(danger);
-
-        Debug.Log($"Weather Apply: Raining={isRaining}, Slippery={isSlippery}, LEDs danger={danger}");
-    }
+    private bool isRaining;
 
     private void Start()
     {
-        Apply();
+        StartCoroutine(WeatherLoop());
+    }
+
+    IEnumerator WeatherLoop()
+    {
+        while (true)
+        {
+            // 🌧 Ξεκινά βροχή
+            isRaining = true;
+            ApplyWeather();
+            yield return new WaitForSeconds(rainDuration);
+
+            // ☀ Σταματά βροχή
+            isRaining = false;
+            ApplyWeather();
+            yield return new WaitForSeconds(clearDuration);
+        }
+    }
+
+    void ApplyWeather()
+    {
+        // Rain particles
+        if (rainVFX != null)
+        {
+            if (isRaining)
+                rainVFX.Play();
+            else
+                rainVFX.Stop();
+        }
+
+        // LED strips
+        foreach (var s in ledStrips)
+        {
+            if (s != null)
+                s.SetDanger(isRaining);
+        }
     }
 }
