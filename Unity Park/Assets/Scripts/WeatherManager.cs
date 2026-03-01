@@ -21,7 +21,6 @@ public class WeatherManager : MonoBehaviour
     {
         while (true)
         {
-            // 🌧 Ξεκινά βροχή
             isRaining = true;
             ApplyWeather();
             yield return new WaitForSeconds(rainDuration);
