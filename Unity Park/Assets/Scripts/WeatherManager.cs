@@ -4,13 +4,14 @@ using UnityEngine;
 public class WeatherManager : MonoBehaviour
 {
     [Header("Rain Settings")]
-    public float rainDuration = 10f;      // πόσο κρατάει η βροχή
-    public float clearDuration = 10f;     // πόσο κρατάει ο ήλιος
+    public float rainDuration = 10f;
+    public float clearDuration = 10f;
 
     public ParticleSystem rainVFX;
     public LEDStripController[] ledStrips;
 
-    private bool isRaining;
+    [SerializeField] private bool isRaining;
+    public bool IsRaining => isRaining;
 
     private void Start()
     {
@@ -25,7 +26,6 @@ public class WeatherManager : MonoBehaviour
             ApplyWeather();
             yield return new WaitForSeconds(rainDuration);
 
-            // ☀ Σταματά βροχή
             isRaining = false;
             ApplyWeather();
             yield return new WaitForSeconds(clearDuration);
@@ -34,20 +34,18 @@ public class WeatherManager : MonoBehaviour
 
     void ApplyWeather()
     {
-        // Rain particles
         if (rainVFX != null)
         {
-            if (isRaining)
-                rainVFX.Play();
-            else
-                rainVFX.Stop();
+            if (isRaining) rainVFX.Play();
+            else rainVFX.Stop();
         }
 
-        // LED strips
-        foreach (var s in ledStrips)
+        if (ledStrips != null)
         {
-            if (s != null)
-                s.SetDanger(isRaining);
+            foreach (var s in ledStrips)
+            {
+                if (s != null) s.SetDanger(isRaining);
+            }
         }
     }
 }
