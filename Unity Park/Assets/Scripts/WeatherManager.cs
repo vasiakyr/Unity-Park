@@ -9,12 +9,14 @@ public class WeatherManager : MonoBehaviour
 
     public ParticleSystem rainVFX;
     public LEDStripController[] ledStrips;
+    public AmbientSoundManager ambientSoundManager;
 
     [SerializeField] private bool isRaining;
     public bool IsRaining => isRaining;
 
     private void Start()
     {
+        ApplyWeather(); // για να βάλει σωστό ήχο/καιρό από την αρχή
         StartCoroutine(WeatherLoop());
     }
 
@@ -46,6 +48,11 @@ public class WeatherManager : MonoBehaviour
             {
                 if (s != null) s.SetDanger(isRaining);
             }
+        }
+
+        if (ambientSoundManager != null)
+        {
+            ambientSoundManager.SetRain(isRaining);
         }
     }
 }
