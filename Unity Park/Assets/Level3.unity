@@ -2777,7 +2777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cameraTransform: {fileID: 1973415328}
-  moveSpeed: 3.5
+  moveSpeed: 8
   gravity: -9.81
   lookSpeed: 2
   minPitch: -80
@@ -4121,7 +4121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1241840341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6848,7 +6848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7699100525975612691, guid: 10d98aad7ab824bc7835210e42e32f3d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.3
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 7699100525975612691, guid: 10d98aad7ab824bc7835210e42e32f3d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6856,7 +6856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7699100525975612691, guid: 10d98aad7ab824bc7835210e42e32f3d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7
+      value: 9.2
       objectReference: {fileID: 0}
     - target: {fileID: 7699100525975612691, guid: 10d98aad7ab824bc7835210e42e32f3d, type: 3}
       propertyPath: m_LocalRotation.w
