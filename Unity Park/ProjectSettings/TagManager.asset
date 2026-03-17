@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Car
   - GlowLight
+  - Ped_normal
+  - Ped_disabled
+  - Ped_phone
   layers:
   - Default
   - TransparentFX
