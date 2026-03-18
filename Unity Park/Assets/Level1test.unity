@@ -1188,32 +1188,15 @@ GameObject:
   - component: {fileID: 146367825}
   - component: {fileID: 146367824}
   - component: {fileID: 146367823}
-  - component: {fileID: 146367822}
   - component: {fileID: 146367828}
+  - component: {fileID: 146367829}
   m_Layer: 0
-  m_Name: Ped_Test 2
+  m_Name: Ped_Normal_A_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &146367822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146367821}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80f1e0f1c47cf462c81f32b194e515be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PedestrianAI
-  pedestrianType: 0
-  targetPoint: {fileID: 0}
-  moveSpeed: 2
-  zigzagAmount: 0.5
-  zigzagSpeed: 2
 --- !u!195 &146367823
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1324,12 +1307,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146367821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.37, y: 1.2, z: -38.7}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.23, y: -15.2, z: -4.299999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1841800415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &146367828
 BoxCollider:
@@ -1352,6 +1335,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &146367829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146367821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f1e0f1c47cf462c81f32b194e515be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PedestrianAI
+  pedestrianType: 0
+  targetPoint: {fileID: 218028626}
+  moveSpeed: 2
+  zigzagAmount: 0.5
+  zigzagSpeed: 2
 --- !u!1 &165808272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,12 +1616,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218028625}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.8, y: 0.65, z: -21.52}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.049999, y: -15.75, z: 11.460001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1841800415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &219301711
 PrefabInstance:
@@ -2874,7 +2874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &392473147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6062,8 +6062,9 @@ GameObject:
   - component: {fileID: 892161414}
   - component: {fileID: 892161413}
   - component: {fileID: 892161418}
+  - component: {fileID: 892161419}
   m_Layer: 0
-  m_Name: Ped_Test
+  m_Name: Ped_Normal_A_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6179,12 +6180,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892161411}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 57.69, y: 1.2, z: -39.74}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -13.91, y: -15.2, z: -5.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1841800415}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!65 &892161418
 BoxCollider:
@@ -6207,6 +6208,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &892161419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892161411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f1e0f1c47cf462c81f32b194e515be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PedestrianAI
+  pedestrianType: 0
+  targetPoint: {fileID: 218028626}
+  moveSpeed: 2
+  zigzagAmount: 0.5
+  zigzagSpeed: 2
 --- !u!1001 &892555654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9975,6 +9993,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 357026343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1841800413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841800415}
+  - component: {fileID: 1841800414}
+  m_Layer: 0
+  m_Name: AI_CROSSWALK_A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1841800414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841800413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f730e066dfd4b529bc8a39f64cc0f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CrosswalkController_A
+  pedestrians:
+  - {fileID: 892161419}
+  - {fileID: 146367829}
+  waitBeforeCrossing: 2
+--- !u!4 &1841800415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841800413}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 71.6, y: 16.4, z: -34.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 892161417}
+  - {fileID: 146367827}
+  - {fileID: 218028626}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1844635226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12294,9 +12363,6 @@ SceneRoots:
   - {fileID: 1210678765}
   - {fileID: 1665305449}
   - {fileID: 392473148}
-  - {fileID: 892161417}
-  - {fileID: 146367827}
-  - {fileID: 218028626}
   - {fileID: 301813373}
   - {fileID: 338149965}
   - {fileID: 1084977792}
@@ -12342,3 +12408,4 @@ SceneRoots:
   - {fileID: 2128612655}
   - {fileID: 914366508}
   - {fileID: 512583652}
+  - {fileID: 1841800415}
