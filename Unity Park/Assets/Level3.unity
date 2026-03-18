@@ -2806,7 +2806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cameraTransform: {fileID: 1973415328}
-  moveSpeed: 8
+  moveSpeed: 2
   gravity: -9.81
   lookSpeed: 2
   minPitch: -80
@@ -6542,7 +6542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1832500574
 MonoBehaviour:
   m_ObjectHideFlags: 0

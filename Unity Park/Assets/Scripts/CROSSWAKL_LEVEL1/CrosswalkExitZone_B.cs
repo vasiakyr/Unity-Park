@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class CrosswalkZoneTrigger : MonoBehaviour
+public class CrosswalkExitZone_B : MonoBehaviour
 {
-    public CrosswalkController crosswalkController;
+    public CrosswalkController_B crosswalkController;
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         PedestrianAI ped = other.GetComponent<PedestrianAI>();
 

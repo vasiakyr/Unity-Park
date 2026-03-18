@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrosswalkController : MonoBehaviour
+public class CrosswalkController_B : MonoBehaviour
 {
     [Header("Pedestrian Lists")]
     public List<PedestrianAI> waitingPedestrians = new List<PedestrianAI>();
@@ -15,11 +15,25 @@ public class CrosswalkController : MonoBehaviour
     public float extraTimeForCrowd = 2f;
     public float cooldownTime = 3f;
 
+    [Header("Traffic Lights")]
+    public GameObject carRed;
+    public GameObject carGreen;
+    public GameObject pedRed;
+    public GameObject pedGreen;
+
+    [Header("Player")]
+    public bool playerWaiting = false;
+
     private bool isSequenceRunning = false;
+
+    void Start()
+    {
+        SetCarsGreen();
+    }
 
     void Update()
     {
-        if (!isSequenceRunning && waitingPedestrians.Count > 0)
+        if (!isSequenceRunning && waitingPedestrians.Count > 0 && playerWaiting)
         {
             StartCoroutine(CrosswalkSequence());
         }
@@ -33,6 +47,8 @@ public class CrosswalkController : MonoBehaviour
 
         float dynamicTime = CalculateDynamicGreenTime();
         Debug.Log("Dynamic green time = " + dynamicTime);
+
+        SetPedestriansGreen();
 
         foreach (PedestrianAI ped in waitingPedestrians)
         {
@@ -60,6 +76,8 @@ public class CrosswalkController : MonoBehaviour
         }
 
         Debug.Log("CARS GREEN - PEDESTRIANS RED");
+
+        SetCarsGreen();
 
         yield return new WaitForSeconds(cooldownTime);
 
@@ -95,7 +113,9 @@ public class CrosswalkController : MonoBehaviour
 
     public void AddWaitingPedestrian(PedestrianAI ped)
     {
-        if (!waitingPedestrians.Contains(ped))
+        if (ped == null) return;
+
+        if (!waitingPedestrians.Contains(ped) && !crossingPedestrians.Contains(ped))
         {
             waitingPedestrians.Add(ped);
             Debug.Log("Added waiting pedestrian: " + ped.name);
@@ -104,10 +124,30 @@ public class CrosswalkController : MonoBehaviour
 
     public void RemoveCrossingPedestrian(PedestrianAI ped)
     {
+        if (ped == null) return;
+
         if (crossingPedestrians.Contains(ped))
         {
             crossingPedestrians.Remove(ped);
             Debug.Log("Pedestrian left crosswalk: " + ped.name);
         }
+    }
+
+    void SetCarsGreen()
+    {
+        if (carGreen != null) carGreen.SetActive(true);
+        if (carRed != null) carRed.SetActive(false);
+
+        if (pedGreen != null) pedGreen.SetActive(false);
+        if (pedRed != null) pedRed.SetActive(true);
+    }
+
+    void SetPedestriansGreen()
+    {
+        if (carGreen != null) carGreen.SetActive(false);
+        if (carRed != null) carRed.SetActive(true);
+
+        if (pedGreen != null) pedGreen.SetActive(true);
+        if (pedRed != null) pedRed.SetActive(false);
     }
 }
