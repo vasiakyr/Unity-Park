@@ -33,7 +33,8 @@ public class CrosswalkController_B : MonoBehaviour
 
     void Update()
     {
-        if (!isSequenceRunning && waitingPedestrians.Count > 0 && playerWaiting)
+        // Ξεκινάει ΜΟΝΟ όταν ο παίκτης είναι στο waiting zone
+        if (!isSequenceRunning && playerWaiting)
         {
             StartCoroutine(CrosswalkSequence());
         }
@@ -75,11 +76,23 @@ public class CrosswalkController_B : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log("CARS GREEN - PEDESTRIANS RED");
+        if (playerWaiting)
+        {
+            Debug.Log("Player still waiting - keep pedestrians green");
+            isSequenceRunning = false;
+            yield break;
+        }
 
-        SetCarsGreen();
+        ReturnCarsGreen();
+    }
 
-        yield return new WaitForSeconds(cooldownTime);
+    public void ReturnCarsGreen()
+    {
+        if (crossingPedestrians.Count == 0)
+        {
+            Debug.Log("CARS GREEN - PEDESTRIANS RED");
+            SetCarsGreen();
+        }
 
         isSequenceRunning = false;
     }
@@ -130,6 +143,11 @@ public class CrosswalkController_B : MonoBehaviour
         {
             crossingPedestrians.Remove(ped);
             Debug.Log("Pedestrian left crosswalk: " + ped.name);
+        }
+
+        if (!playerWaiting && crossingPedestrians.Count == 0)
+        {
+            ReturnCarsGreen();
         }
     }
 
