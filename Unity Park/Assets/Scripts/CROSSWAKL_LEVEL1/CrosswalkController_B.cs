@@ -13,7 +13,6 @@ public class CrosswalkController_B : MonoBehaviour
     public float extraTimeForDisabled = 3f;
     public float extraTimeForPhone = 4f;
     public float extraTimeForCrowd = 2f;
-    public float cooldownTime = 3f;
 
     [Header("Traffic Lights")]
     public GameObject carRed;
@@ -25,6 +24,7 @@ public class CrosswalkController_B : MonoBehaviour
     public bool playerWaiting = false;
 
     private bool isSequenceRunning = false;
+    private bool pedestriansGreenActive = false;
 
     void Start()
     {
@@ -33,67 +33,81 @@ public class CrosswalkController_B : MonoBehaviour
 
     void Update()
     {
-        // Ξεκινάει ΜΟΝΟ όταν ο παίκτης είναι στο waiting zone
-        if (!isSequenceRunning && playerWaiting)
+        CleanLists();
+
+        // ΜΟΝΟ όταν μπει ο παίκτης στο waiting zone
+        if (playerWaiting && !pedestriansGreenActive && !isSequenceRunning)
         {
             StartCoroutine(CrosswalkSequence());
+        }
+
+        // Αν είναι ήδη πράσινο και μπουν κι άλλοι waiting AI, ξεκίνα τους
+        if (pedestriansGreenActive && waitingPedestrians.Count > 0)
+        {
+            StartWaitingPedestrians();
+        }
+
+        // Μόλις φύγει ο παίκτης από το waiting zone -> αμέσως κόκκινο για πεζούς
+        if (!playerWaiting && pedestriansGreenActive)
+        {
+            ReturnCarsGreen();
         }
     }
 
     IEnumerator CrosswalkSequence()
     {
         isSequenceRunning = true;
+        pedestriansGreenActive = true;
 
-        Debug.Log("CARS RED - PEDESTRIANS GREEN");
+        Debug.Log("PLAYER DETECTED -> CARS RED - PEDESTRIANS GREEN");
+        SetPedestriansGreen();
 
         float dynamicTime = CalculateDynamicGreenTime();
         Debug.Log("Dynamic green time = " + dynamicTime);
 
-        SetPedestriansGreen();
-
-        foreach (PedestrianAI ped in waitingPedestrians)
-        {
-            if (ped != null)
-            {
-                ped.StartCrossing();
-
-                if (!crossingPedestrians.Contains(ped))
-                {
-                    crossingPedestrians.Add(ped);
-                }
-            }
-        }
-
-        waitingPedestrians.Clear();
+        // Ξεκινάνε οι AI που ήδη περιμένουν
+        StartWaitingPedestrians();
 
         yield return new WaitForSeconds(dynamicTime);
 
-        Debug.Log("WAITING FOR PEDESTRIANS TO FINISH");
+        isSequenceRunning = false;
+    }
 
-        while (crossingPedestrians.Count > 0)
+    void StartWaitingPedestrians()
+    {
+        for (int i = waitingPedestrians.Count - 1; i >= 0; i--)
         {
-            crossingPedestrians.RemoveAll(p => p == null);
-            yield return null;
-        }
+            PedestrianAI ped = waitingPedestrians[i];
 
-        if (playerWaiting)
-        {
-            Debug.Log("Player still waiting - keep pedestrians green");
-            isSequenceRunning = false;
-            yield break;
-        }
+            if (ped == null)
+            {
+                waitingPedestrians.RemoveAt(i);
+                continue;
+            }
 
-        ReturnCarsGreen();
+            ped.StartCrossing();
+
+            if (!crossingPedestrians.Contains(ped))
+            {
+                crossingPedestrians.Add(ped);
+            }
+
+            waitingPedestrians.RemoveAt(i);
+        }
+    }
+
+    void CleanLists()
+    {
+        waitingPedestrians.RemoveAll(p => p == null);
+        crossingPedestrians.RemoveAll(p => p == null);
     }
 
     public void ReturnCarsGreen()
     {
-        if (crossingPedestrians.Count == 0)
-        {
-            Debug.Log("CARS GREEN - PEDESTRIANS RED");
-            SetCarsGreen();
-        }
+        Debug.Log("NO PLAYER IN WAITING ZONE -> CARS GREEN - PEDESTRIANS RED");
+        SetCarsGreen();
 
+        pedestriansGreenActive = false;
         isSequenceRunning = false;
     }
 
@@ -135,6 +149,17 @@ public class CrosswalkController_B : MonoBehaviour
         }
     }
 
+    public void RemoveWaitingPedestrian(PedestrianAI ped)
+    {
+        if (ped == null) return;
+
+        if (waitingPedestrians.Contains(ped))
+        {
+            waitingPedestrians.Remove(ped);
+            Debug.Log("Removed waiting pedestrian: " + ped.name);
+        }
+    }
+
     public void RemoveCrossingPedestrian(PedestrianAI ped)
     {
         if (ped == null) return;
@@ -143,11 +168,6 @@ public class CrosswalkController_B : MonoBehaviour
         {
             crossingPedestrians.Remove(ped);
             Debug.Log("Pedestrian left crosswalk: " + ped.name);
-        }
-
-        if (!playerWaiting && crossingPedestrians.Count == 0)
-        {
-            ReturnCarsGreen();
         }
     }
 

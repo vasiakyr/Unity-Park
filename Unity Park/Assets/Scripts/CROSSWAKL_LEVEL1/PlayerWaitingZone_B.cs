@@ -9,7 +9,7 @@ public class PlayerWaitingZone_B : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             crosswalkController.playerWaiting = true;
-            Debug.Log("Player entered waiting zone");
+            Debug.Log("Player entered waiting zone B");
         }
     }
 
@@ -18,12 +18,7 @@ public class PlayerWaitingZone_B : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             crosswalkController.playerWaiting = false;
-            Debug.Log("Player left waiting zone");
-
-            if (crosswalkController.crossingPedestrians.Count == 0)
-            {
-                crosswalkController.ReturnCarsGreen();
-            }
+            Debug.Log("Player exited waiting zone B");
         }
     }
 }
