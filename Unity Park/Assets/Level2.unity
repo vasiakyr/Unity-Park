@@ -8579,7 +8579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RainPlayerController
   cameraTransform: {fileID: 0}
   weatherManager: {fileID: 778524058}
-  normalSpeed: 8
+  normalSpeed: 2
   slowSpeed: 1
   sprintSpeed: 5.5
   rainSpeedMultiplier: 0.7

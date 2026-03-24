@@ -9401,7 +9401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cameraTransform: {fileID: 1973415328}
-  moveSpeed: 8
+  moveSpeed: 2
   gravity: -9.81
   lookSpeed: 2
   minPitch: -80
