@@ -35,21 +35,30 @@ public class CrosswalkController_B : MonoBehaviour
     {
         CleanLists();
 
-        // ΜΟΝΟ όταν μπει ο παίκτης στο waiting zone
+        Debug.Log("playerWaiting: " + playerWaiting +
+                  " | waiting: " + waitingPedestrians.Count +
+                  " | crossing: " + crossingPedestrians.Count +
+                  " | greenActive: " + pedestriansGreenActive);
+
+        // ΜΟΝΟ όταν μπει ο παίκτης
         if (playerWaiting && !pedestriansGreenActive && !isSequenceRunning)
         {
             StartCoroutine(CrosswalkSequence());
         }
 
-        // Αν είναι ήδη πράσινο και μπουν κι άλλοι waiting AI, ξεκίνα τους
+        // Όταν είναι πράσινο, ξεκίνα όσους AI περιμένουν
         if (pedestriansGreenActive && waitingPedestrians.Count > 0)
         {
             StartWaitingPedestrians();
         }
 
-        // Μόλις φύγει ο παίκτης από το waiting zone -> αμέσως κόκκινο για πεζούς
-        if (!playerWaiting && pedestriansGreenActive)
+        // Αν δεν υπάρχει κανείς -> γύρνα σε cars green / ped red
+        if (!playerWaiting &&
+            waitingPedestrians.Count == 0 &&
+            crossingPedestrians.Count == 0 &&
+            pedestriansGreenActive)
         {
+            Debug.Log("NO ONE LEFT -> RETURN TO CARS GREEN");
             ReturnCarsGreen();
         }
     }
@@ -65,7 +74,6 @@ public class CrosswalkController_B : MonoBehaviour
         float dynamicTime = CalculateDynamicGreenTime();
         Debug.Log("Dynamic green time = " + dynamicTime);
 
-        // Ξεκινάνε οι AI που ήδη περιμένουν
         StartWaitingPedestrians();
 
         yield return new WaitForSeconds(dynamicTime);
@@ -104,7 +112,7 @@ public class CrosswalkController_B : MonoBehaviour
 
     public void ReturnCarsGreen()
     {
-        Debug.Log("NO PLAYER IN WAITING ZONE -> CARS GREEN - PEDESTRIANS RED");
+        Debug.Log("RETURN CARS GREEN CALLED");
         SetCarsGreen();
 
         pedestriansGreenActive = false;
@@ -173,6 +181,8 @@ public class CrosswalkController_B : MonoBehaviour
 
     void SetCarsGreen()
     {
+        Debug.Log("SET CARS GREEN / PED RED");
+
         if (carGreen != null) carGreen.SetActive(true);
         if (carRed != null) carRed.SetActive(false);
 
@@ -182,6 +192,8 @@ public class CrosswalkController_B : MonoBehaviour
 
     void SetPedestriansGreen()
     {
+        Debug.Log("SET CARS RED / PED GREEN");
+
         if (carGreen != null) carGreen.SetActive(false);
         if (carRed != null) carRed.SetActive(true);
 
