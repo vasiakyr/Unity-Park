@@ -348,7 +348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &26074470
 Transform:
   m_ObjectHideFlags: 0
@@ -461,7 +461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &29863393
 Transform:
   m_ObjectHideFlags: 0
@@ -724,6 +724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -897,6 +901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -957,6 +965,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1266,6 +1278,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2078,6 +2094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2422,11 +2442,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.212
+      value: 0.2119999
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -80.57
+      value: -79.84
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2583,6 +2603,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2911,6 +2935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3137,7 +3165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &252907275
 Transform:
   m_ObjectHideFlags: 0
@@ -3749,6 +3777,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3803,7 +3835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &281487973
 Transform:
   m_ObjectHideFlags: 0
@@ -4029,6 +4061,10 @@ PrefabInstance:
     - target: {fileID: 1501109885463949731, guid: f35bcb395da864fe089579a4d3eb918b, type: 3}
       propertyPath: m_Name
       value: road-block-type-A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501109885463949731, guid: f35bcb395da864fe089579a4d3eb918b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2278491353033190169, guid: f35bcb395da864fe089579a4d3eb918b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4567,7 +4603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &352917019
 Transform:
   m_ObjectHideFlags: 0
@@ -4872,6 +4908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4944,6 +4984,10 @@ PrefabInstance:
     - target: {fileID: 1501109885463949731, guid: f35bcb395da864fe089579a4d3eb918b, type: 3}
       propertyPath: m_Name
       value: road-block-type-A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501109885463949731, guid: f35bcb395da864fe089579a4d3eb918b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2278491353033190169, guid: f35bcb395da864fe089579a4d3eb918b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5745,7 +5789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &467740942
 Transform:
   m_ObjectHideFlags: 0
@@ -5942,6 +5986,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6417,7 +6465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &537640571
 Transform:
   m_ObjectHideFlags: 0
@@ -6659,6 +6707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: traffic-cone (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1074537057690092291, guid: 877f9332c9f5746578e5ef9c207c7eda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6843,6 +6895,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7482,6 +7538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7895,6 +7955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8016,6 +8080,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8780,6 +8848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: traffic-cone
       objectReference: {fileID: 0}
+    - target: {fileID: 1074537057690092291, guid: 877f9332c9f5746578e5ef9c207c7eda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9519,7 +9591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RainPlayerController
   cameraTransform: {fileID: 0}
   weatherManager: {fileID: 778524058}
-  normalSpeed: 2
+  normalSpeed: 8
   slowSpeed: 1
   sprintSpeed: 5.5
   rainSpeedMultiplier: 0.7
@@ -9718,7 +9790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &838463443
 Transform:
   m_ObjectHideFlags: 0
@@ -9891,7 +9963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &843833004
 Transform:
   m_ObjectHideFlags: 0
@@ -10115,7 +10187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &855215967
 Transform:
   m_ObjectHideFlags: 0
@@ -10228,7 +10300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &856099880
 Transform:
   m_ObjectHideFlags: 0
@@ -11841,6 +11913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11901,6 +11977,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d74150291c72244f08d7645058a70087, type: 3}
       propertyPath: m_Name
       value: two-lane-intersaction (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d74150291c72244f08d7645058a70087, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12301,7 +12381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1004680155
 Transform:
   m_ObjectHideFlags: 0
@@ -12692,7 +12772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1050827773
 Transform:
   m_ObjectHideFlags: 0
@@ -13003,6 +13083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: street-light-double
       objectReference: {fileID: 0}
+    - target: {fileID: 5365786387960780749, guid: 7b5e1eea516134af4811125beb2c0716, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8900202455907467469, guid: 7b5e1eea516134af4811125beb2c0716, type: 3}
       propertyPath: isOn
       value: 1
@@ -13227,11 +13311,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.212
+      value: 0.2119999
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -80.57
+      value: -79.84
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13545,6 +13629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13696,6 +13784,10 @@ PrefabInstance:
     - target: {fileID: 1960225389039590369, guid: 7e568744be8aa4731b0c70b6e4588dff, type: 3}
       propertyPath: m_Name
       value: traffic-lights-curved
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960225389039590369, guid: 7e568744be8aa4731b0c70b6e4588dff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14242,11 +14334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.212
+      value: 0.2119999
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -80.57
+      value: -79.84
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14396,6 +14488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-intersaction
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d74150291c72244f08d7645058a70087, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14491,6 +14587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: commercial-building-ice-cream-shop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b07cb0d709acb4969a0c1ff95d208e47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14570,6 +14670,10 @@ PrefabInstance:
     - target: {fileID: 8408161483928622792, guid: b6c6988ff0763438390b11f7d860b9fc, type: 3}
       propertyPath: m_Name
       value: two-lane-L-junction-left
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408161483928622792, guid: b6c6988ff0763438390b11f7d860b9fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9215520418501201010, guid: b6c6988ff0763438390b11f7d860b9fc, type: 3}
       propertyPath: m_LocalScale.x
@@ -14683,6 +14787,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14879,7 +14987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1338917191
 Transform:
   m_ObjectHideFlags: 0
@@ -15004,11 +15112,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.212
+      value: 0.2119999
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -80.57
+      value: -79.84
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15488,6 +15596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5900967072580627644, guid: 8d6ced06318c04ceb8cb56dff03a9375, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6534620689486427654, guid: 8d6ced06318c04ceb8cb56dff03a9375, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -15597,6 +15709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15649,7 +15765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1401331043
 Transform:
   m_ObjectHideFlags: 0
@@ -15839,6 +15955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-L-junction-left (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8408161483928622792, guid: b6c6988ff0763438390b11f7d860b9fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9215520418501201010, guid: b6c6988ff0763438390b11f7d860b9fc, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0052226
@@ -15948,6 +16068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-intersaction (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d74150291c72244f08d7645058a70087, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16041,6 +16165,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16238,6 +16366,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17295,6 +17427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17416,11 +17552,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.212
+      value: 0.2119999
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -80.57
+      value: -79.84
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17603,6 +17739,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18368,6 +18508,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19086,7 +19230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1696121565
 Transform:
   m_ObjectHideFlags: 0
@@ -19471,7 +19615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1735052626
 Transform:
   m_ObjectHideFlags: 0
@@ -19730,7 +19874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1756065184
 Transform:
   m_ObjectHideFlags: 0
@@ -19926,6 +20070,10 @@ PrefabInstance:
     - target: {fileID: 1074537057690092291, guid: 877f9332c9f5746578e5ef9c207c7eda, type: 3}
       propertyPath: m_Name
       value: traffic-cone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1074537057690092291, guid: 877f9332c9f5746578e5ef9c207c7eda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20209,6 +20357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20354,7 +20506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1823031357
 Transform:
   m_ObjectHideFlags: 0
@@ -20479,11 +20631,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.212
+      value: 0.2119999
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -80.57
+      value: -79.84
       objectReference: {fileID: 0}
     - target: {fileID: 6199774919327427134, guid: f154d8e56ba3c48c18e04e119cc1c9cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20776,6 +20928,10 @@ PrefabInstance:
     - target: {fileID: 1074537057690092291, guid: 877f9332c9f5746578e5ef9c207c7eda, type: 3}
       propertyPath: m_Name
       value: traffic-cone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1074537057690092291, guid: 877f9332c9f5746578e5ef9c207c7eda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21144,6 +21300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21204,6 +21364,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21296,6 +21460,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
       propertyPath: m_Name
       value: two-lane-linear-road-piece (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22129,6 +22297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22605,6 +22777,10 @@ PrefabInstance:
       value: civil-car-C
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2a72fabd85ec347019ee1968eb503667, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a72fabd85ec347019ee1968eb503667, type: 3}
       propertyPath: m_TagString
       value: Car
       objectReference: {fileID: 0}
@@ -22830,7 +23006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2001589347
 Transform:
   m_ObjectHideFlags: 0
@@ -23114,6 +23290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: two-lane-linear-road-piece (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8c338600d4e15465986843f5e7326d74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23253,7 +23433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &2048223094
 ParticleSystemRenderer:
   serializedVersion: 7
@@ -28537,7 +28717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2144254957
 Transform:
   m_ObjectHideFlags: 0
@@ -28650,7 +28830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2144814304
 Transform:
   m_ObjectHideFlags: 0
@@ -28796,6 +28976,10 @@ PrefabInstance:
     - target: {fileID: 1074537057690092291, guid: 877f9332c9f5746578e5ef9c207c7eda, type: 3}
       propertyPath: m_Name
       value: traffic-cone (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1074537057690092291, guid: 877f9332c9f5746578e5ef9c207c7eda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
