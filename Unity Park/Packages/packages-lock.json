@@ -202,7 +202,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
     "com.unity.xr.interaction.toolkit": {
       "version": "3.3.1",
       "depth": 0,
@@ -219,8 +218,6 @@
       },
       "url": "https://packages.unity.com"
     },
-=======
->>>>>>> c86c8096f7c1fca97ac9537fe233ba88091e101c
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.13",
       "depth": 1,
@@ -243,7 +240,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
     "com.unity.xr.openxr": {
       "version": "1.16.1",
       "depth": 0,
@@ -257,8 +253,6 @@
       },
       "url": "https://packages.unity.com"
     },
-=======
->>>>>>> c86c8096f7c1fca97ac9537fe233ba88091e101c
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
