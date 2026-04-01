@@ -6,10 +6,14 @@ public class SimpleBallPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        Debug.Log("Touched by: " + other.name + " | tag: " + other.tag);
+
+        if (other.CompareTag("Player") || other.transform.root.CompareTag("Player"))
         {
-            // Παίζει ήχο στο σημείο
-            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            if (pickupSound != null)
+            {
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            }
 
             Destroy(gameObject);
         }
