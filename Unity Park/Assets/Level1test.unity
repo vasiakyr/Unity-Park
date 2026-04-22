@@ -15624,6 +15624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SRanipal Eye Framework
       objectReference: {fileID: 0}
+    - target: {fileID: 1707266662751158, guid: f676e25d0fcd1ec4fa22af3017316de9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4879914434278830, guid: f676e25d0fcd1ec4fa22af3017316de9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -57.93875
