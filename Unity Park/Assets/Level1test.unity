@@ -13973,7 +13973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6a194ecb3794090a7e14c74eb55a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmbientSoundManager
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1037944854}
   normalAmbience: {fileID: 8300000, guid: d00f795d37ebd42e796b08d877ad6b4e, type: 3}
   rainAmbience: {fileID: 8300000, guid: bbc585b1852a84b04ad9062ac533b041, type: 3}
 --- !u!82 &1037944854
