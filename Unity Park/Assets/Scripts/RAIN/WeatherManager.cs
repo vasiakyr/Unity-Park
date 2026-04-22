@@ -1,53 +1,55 @@
+using System.Collections;
 using UnityEngine;
 
 public class WeatherManager : MonoBehaviour
 {
-    [Header("Weather State")]
-    public bool isRaining = false;
+    [Header("Rain Settings")]
+    public float rainDuration = 10f;
+    public float clearDuration = 10f;
 
-    [Header("References")]
     public ParticleSystem rainVFX;
+    public LEDStripController[] ledStrips;
     public AmbientSoundManager ambientSoundManager;
+
+    [SerializeField] private bool isRaining;
+    public bool IsRaining => isRaining;
 
     private void Start()
     {
-        // Αν δεν έχει μπει από Inspector, πάρε το global instance
-        if (ambientSoundManager == null)
-            ambientSoundManager = AmbientSoundManager.Instance;
-
-        ApplyWeather();
+        ApplyWeather(); // για να βάλει σωστό ήχο/καιρό από την αρχή
+        StartCoroutine(WeatherLoop());
     }
 
-    public void SetRain(bool rain)
+    IEnumerator WeatherLoop()
     {
-        isRaining = rain;
-        ApplyWeather();
+        while (true)
+        {
+            isRaining = true;
+            ApplyWeather();
+            yield return new WaitForSeconds(rainDuration);
+
+            isRaining = false;
+            ApplyWeather();
+            yield return new WaitForSeconds(clearDuration);
+        }
     }
 
-    public void ToggleRain()
+    void ApplyWeather()
     {
-        isRaining = !isRaining;
-        ApplyWeather();
-    }
-
-    private void ApplyWeather()
-    {
-        // Rain VFX
         if (rainVFX != null)
         {
-            if (isRaining)
+            if (isRaining) rainVFX.Play();
+            else rainVFX.Stop();
+        }
+
+        if (ledStrips != null)
+        {
+            foreach (var s in ledStrips)
             {
-                if (!rainVFX.isPlaying)
-                    rainVFX.Play();
-            }
-            else
-            {
-                if (rainVFX.isPlaying)
-                    rainVFX.Stop();
+                if (s != null) s.SetDanger(isRaining);
             }
         }
 
-        // Rain Sound
         if (ambientSoundManager != null)
         {
             ambientSoundManager.SetRain(isRaining);
