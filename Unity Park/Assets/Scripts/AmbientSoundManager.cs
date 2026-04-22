@@ -4,10 +4,7 @@ public class AmbientSoundManager : MonoBehaviour
 {
     public static AmbientSoundManager Instance;
 
-    [Header("Audio Source")]
     public AudioSource audioSource;
-
-    [Header("Ambient Clips")]
     public AudioClip normalAmbience;
     public AudioClip rainAmbience;
 
@@ -15,7 +12,6 @@ public class AmbientSoundManager : MonoBehaviour
 
     private void Awake()
     {
-        // Αν υπάρχει ήδη άλλο instance, σβήσε αυτό
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -31,52 +27,29 @@ public class AmbientSoundManager : MonoBehaviour
 
     private void Start()
     {
-        PlayNormal();
-    }
-
-    public void PlayNormal()
-    {
-        if (audioSource == null || normalAmbience == null) return;
-
-        isRaining = false;
-
-        if (audioSource.clip != normalAmbience)
-            audioSource.Stop();
-
-        audioSource.clip = normalAmbience;
-        audioSource.loop = true;
-
-        if (!audioSource.isPlaying)
+        if (audioSource != null && normalAmbience != null)
+        {
+            audioSource.clip = normalAmbience;
+            audioSource.loop = true;
             audioSource.Play();
-        else
-            audioSource.Play();
-    }
-
-    public void PlayRain()
-    {
-        if (audioSource == null || rainAmbience == null) return;
-
-        isRaining = true;
-
-        if (audioSource.clip != rainAmbience)
-            audioSource.Stop();
-
-        audioSource.clip = rainAmbience;
-        audioSource.loop = true;
-
-        if (!audioSource.isPlaying)
-            audioSource.Play();
-        else
-            audioSource.Play();
+        }
     }
 
     public void SetRain(bool rain)
     {
+        if (audioSource == null) return;
         if (rain == isRaining) return;
 
-        if (rain)
-            PlayRain();
+        isRaining = rain;
+
+        audioSource.Stop();
+
+        if (isRaining)
+            audioSource.clip = rainAmbience;
         else
-            PlayNormal();
+            audioSource.clip = normalAmbience;
+
+        audioSource.loop = true;
+        audioSource.Play();
     }
 }
